@@ -1,0 +1,23 @@
+
+****************
+**WVS 7th wave**
+****************
+
+N_REGION_ISO: the last three digits seem to correspond to the 
+prefecture. 
+
+N_REGION_WVS: the last three digits seem to correspond to the 
+region. Only five here as they have group some of the 8 regions 
+together. 
+
+N_TOWN: The city of the respondent who answered the survey
+
+******************
+**WVS TimeSeries**
+******************
+
+X048ISO: N_REGION_ISO in TimeSeries data.
+
+X048WVS: N_REGION_WVS in TimeSeries data.
+
+X049CS: Only available for the 2010 data...
