@@ -20,4 +20,4 @@ X048ISO: N_REGION_ISO in TimeSeries data.
 
 X048WVS: N_REGION_WVS in TimeSeries data.
 
-X049CS: Only available for the 2010 data...
+X049CS: The city of the respondent. 
