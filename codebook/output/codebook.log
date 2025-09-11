@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.24)  10 SEP 2025 20:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.24)  10 SEP 2025 20:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**codebook.tex
-(./codebook.tex
+**codebook/output/codebook.tex
+(./codebook/output/codebook.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -769,7 +769,7 @@ tim
 Package translations Info: No language package found. I am going to use `englis
 h' as default language. on input line 86.
 
-(./codebook.aux)
+(codebook/output/codebook.aux)
 \openout1 = `codebook.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
@@ -880,7 +880,7 @@ No file codebook.bbl.
 Package biblatex Info: Reference section=0 on input line 86.
 Package biblatex Info: Reference segment=0 on input line 86.
 Package hyperref Info: Link coloring ON on input line 86.
-(./codebook.out) (./codebook.out)
+(codebook/output/codebook.out) (codebook/output/codebook.out)
 \@outlinefile=\write4
 \openout4 = `codebook.out'.
 
@@ -903,7 +903,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 88.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 88.
- (./codebook.toc)
+ (codebook/output/codebook.toc)
 \tf@toc=\write5
 \openout5 = `codebook.toc'.
 
@@ -915,9 +915,9 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <8> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 104.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 124.
+(Font)              <7> on input line 127.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 124.
+(Font)              <5> on input line 127.
 
 
 [2
@@ -925,7 +925,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
 
-[3] (./codebook.aux)
+[3] (codebook/output/codebook.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -937,13 +937,13 @@ Package logreq Info: Writing requests to 'codebook.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27366 strings out of 473190
- 561779 string characters out of 5715800
+ 27367 strings out of 473190
+ 562009 string characters out of 5715800
  1758381 words of memory out of 5000000
  50369 multiletter control sequences out of 15000+600000
  565613 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,8n,101p,697b,3949s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,8n,101p,713b,3949s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
@@ -953,7 +953,7 @@ local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
 ocal/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/lo
 cal/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/loca
 l/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on codebook.pdf (3 pages, 111157 bytes).
+Output written on codebook/output/codebook.pdf (3 pages, 111200 bytes).
 PDF statistics:
  128 PDF objects out of 1000 (max. 8388607)
  103 compressed objects within 2 object streams
