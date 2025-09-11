@@ -1,0 +1,99 @@
+---
+author: Jozef Rivest
+bibliography: ../paper/references.bib
+date: " "
+format:
+  pdf:
+    documentclass: article
+    font-size: 12pt
+    linkcolor: Maroon
+    citecolor: Maroon
+    urlcolor: Maroon
+    keep-tex: true
+    include-in-header: header.tex
+
+title: Pacifism and Antimilitarism in Japan
+---
+
+
+```{r}
+#| include: false
+
+source("../code/dataset.R")
+
+knitr::knit_hooks$set(
+  source = function(x, options) {
+    paste0("\\begin{CodeChunk}\n\\begin{Highlighting}{}\n",
+           x,
+           "\\end{Highlighting}\n")
+  },
+  output = function(x, options) {
+    paste0(x, "\\end{CodeChunk}\n")
+  }
+)
+```
+
+\clearpage
+\tableofcontents
+
+\clearpage
+
+# Introduction
+
+The present document introduce the codebook for the following dataset.
+For an exemple of the entry in the dataset, please refer to the code
+chunk below.
+
+
+```{r}
+
+print(mil_bases)
+```
+
+# Region
+
+`region` here refers to the administrative region where the military
+base is located. The term region is employed here as the denomination
+depends for each country. See the list below to understand what `region`
+corresponds to for each country present in the dataset.
+
+-   Japan $\rightarrow$ Prefectures
+
+# City
+
+`city` corresponds to the city where the base is situated.
+
+# Personel
+
+# Type
+
+The `type` refers to the type of forces the base is hosting. As bases
+can host more than one group forces, a numerical value is assigned to
+each to account also for combinations.
+
+<!-- ::: tblr -->
+<!-- colspec=Q\[\]Q\[\], row1=font=**,**, cell2-32=halign=c,, Type & Value\ -->
+<!-- Naval Base & 0\ -->
+<!-- Ground Base & 1\ -->
+<!-- ::: -->
+
+# Size
+
+`personel` corresponds to the total number of working personel
+officially recensed.
+
+# Proportion Size
+
+The `prop\_size` variable corresponds to the ratio of the total area of
+the base over the total area of the city where the base is located.
+
+# Longitude
+
+The `longitude` variable corresponds to the longitude location of the
+base. Positive value indicates the location north of the equator line,
+and negative values means location south of the equator line.
+
+# Latitude
+
+The `latitude` is a variable that locates the latitude location of the
+base.

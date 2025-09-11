@@ -1,0 +1,171 @@
+\documentclass{article}
+\title{Pacifism and Antimilitarism in Japan}
+\author{Jozef Rivest}
+\date{ }
+
+\usepackage[margin=3cm]{geometry}
+
+\usepackage[authordate, backend=biber]{biblatex-chicago}
+\addbibresource{references.bib}
+
+\usepackage{graphicx}
+\graphicspath{{../images}}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=Maroon,
+  urlcolor=Maroon,
+  citecolor=Maron
+}
+
+\usepackage{listings}
+
+\usepackage{tabularray}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\UseTblrLibrary{booktabs}
+\UseTblrLibrary{siunitx}
+\newcommand{\tinytableTabularrayUnderline}[1]{\underline{#1}}
+\newcommand{\tinytableTabularrayStrikeout}[1]{\sout{#1}}
+\NewTableCommand{\tinytableDefineColor}[3]{\definecolor{#1}{#2}{#3}}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+<<setup, include=FALSE>>=
+# Global chunk options
+library(knitr)
+opts_chunk$set(
+  echo = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  fig.width = 6,
+  fig.height = 4,
+  fig.align = 'center'
+)
+
+# Load required libraries
+library(ggplot2)
+library(dplyr)
+library(datasets)
+
+source("../code/dataset.R")
+@
+
+\clearpage
+
+\section{Introduction}
+
+The present document introduce the codebook 
+for the following dataset. For an exemple of 
+the entry in the dataset, please refer to the 
+code chunk below. 
+
+<<example-entry, size = 'footnotesize', ref.label="example-entry", fig.cap="Example of entry in the dataset">>=
+print(mil_bases)
+@
+
+
+\section{Region}
+
+\verb|region| here refers to the administrative region 
+where the military base is located. The term region 
+is employed here as the denomination depends for each 
+country. See the list below to understand what \verb|region|
+corresponds to for each country present in the dataset. 
+
+\begin{itemize}
+  \item Japan $\rightarrow$ Prefectures
+\end{itemize}
+
+\section{City}
+
+\verb|city| corresponds to the city where the base is situated. 
+
+\section{Operated}
+
+\verb|operated| refers to the country who is operating the base.
+It can takes three values: Japan, United States, or Joint.
+
+\begin{table}[H]
+\centering
+\begin{tblr}[         %% tabularray outer open
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]},
+row{1}={}{font=\bfseries,},
+cell{2-3}{2}={}{halign=c,},
+}                     %% tabularray inner close
+\toprule
+Type & Value \\ \midrule %% TinyTableHeader
+Naval Base & 0 \\
+Ground Base & 1 \\
+Air Base & 2 \\
+\bottomrule
+\end{tblr}
+\end{table} 
+
+\section{Personnel}
+
+The \verb|personnel| is the total number of personnel recensed 
+to be working at the base.
+
+\section{Personnel prop.}
+
+The \verb|personnel_prop| is the ratio of the working personnel 
+at the base with the total population of the city. 
+
+\section{Type}
+
+The \verb|type| refers to the type of forces the base is 
+hosting. As bases can host more than one group forces, 
+a numerical value is assigned to each to account also 
+for combinations. 
+
+\begin{table}[H]
+\centering
+\begin{tblr}[         %% tabularray outer open
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]},
+row{1}={}{font=\bfseries,},
+cell{2-3}{2}={}{halign=c,},
+}                     %% tabularray inner close
+\toprule
+Type & Value \\ \midrule %% TinyTableHeader
+Naval Base & 0 \\
+Ground Base & 1 \\
+\bottomrule
+\end{tblr}
+\end{table} 
+
+\section{Size}
+
+\verb|personel| corresponds to the total number of working personel 
+officially recensed. 
+
+\section{Proportion Size}
+
+The \verb|prop_size| variable corresponds to the ratio of the 
+total area of the base over the total area of the city where the 
+base is located. The estimation is obtained by dividing to size of 
+the base in hectars by the total size of the city in hectars. 
+
+\section{Longitude}
+
+The \verb|longitude| variable corresponds to the longitude location
+of the base. Positive value indicates the location north of the
+equator line, and negative values means location south of the equator
+line.
+
+\section{Latitude}
+
+The \verb|latitude| is a variable that locates the latitude 
+location of the base. 
+
+\end{document}

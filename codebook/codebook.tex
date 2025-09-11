@@ -1,0 +1,245 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+]{article}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage{fancyvrb}
+\usepackage{color}
+\usepackage{framed}
+
+% Gray background for code chunks
+\definecolor{shadecolor}{rgb}{0.97,0.97,0.97}
+
+% Define CodeChunk as a shaded box
+\newenvironment{CodeChunk}{\begin{snugshade}}{\end{snugshade}}
+
+% Define Highlighting for source code
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{fontsize=\small,commandchars=\\\{\}}
+
+% Define Output for printed results
+\DefineVerbatimEnvironment{Output}{Verbatim}{fontsize=\small}
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+
+\usepackage{bookmark}
+
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Pacifism and Antimilitarism in Japan},
+  pdfauthor={Jozef Rivest},
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Maroon},
+  urlcolor={Maroon},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Pacifism and Antimilitarism in Japan}
+\author{Jozef Rivest}
+\date{Invalid Date}
+
+\begin{document}
+\maketitle
+
+
+\clearpage
+\tableofcontents
+
+\clearpage
+
+\section{Introduction}\label{introduction}
+
+The present document introduce the codebook for the following dataset.
+For an exemple of the entry in the dataset, please refer to the code
+chunk below.
+
+\begin{CodeChunk}
+\begin{Highlighting}{}
+print(mil_bases)\end{Highlighting}
+    region      city personel type size prop\_size longitude latitude
+1 Kanagawa  Yokosuka    24000    0  568       0.2  35.29249 139.6696
+2   Aomori Hachinohe    24000    0  568       0.2  35.29249 139.6696
+\end{CodeChunk}
+
+\section{Region}\label{region}
+
+\texttt{region} here refers to the administrative region where the
+military base is located. The term region is employed here as the
+denomination depends for each country. See the list below to understand
+what \texttt{region} corresponds to for each country present in the
+dataset.
+
+\begin{itemize}
+\tightlist
+\item
+  Japan \(\rightarrow\) Prefectures
+\end{itemize}
+
+\section{City}\label{city}
+
+\texttt{city} corresponds to the city where the base is situated.
+
+\section{Personel}\label{personel}
+
+\section{Type}\label{type}
+
+The \texttt{type} refers to the type of forces the base is hosting. As
+bases can host more than one group forces, a numerical value is assigned
+to each to account also for combinations.
+
+\section{Size}\label{size}
+
+\texttt{personel} corresponds to the total number of working personel
+officially recensed.
+
+\section{Proportion Size}\label{proportion-size}
+
+The \texttt{prop\textbackslash{}\_size} variable corresponds to the
+ratio of the total area of the base over the total area of the city
+where the base is located.
+
+\section{Longitude}\label{longitude}
+
+The \texttt{longitude} variable corresponds to the longitude location of
+the base. Positive value indicates the location north of the equator
+line, and negative values means location south of the equator line.
+
+\section{Latitude}\label{latitude}
+
+The \texttt{latitude} is a variable that locates the latitude location
+of the base.
+
+
+
+
+\end{document}
