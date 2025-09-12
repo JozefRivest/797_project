@@ -2,42 +2,71 @@ library(tidyverse)
 library(tinytable)
 
 mil_bases <- data.frame(
+  country = c(
+    "Japan",
+    "Japan",
+    "Japan",
+    "Japan"
+  ),
   region = c(
     "Kanagawa",
-    "Aomori"
+    "Aomori",
+    "Aomori",
+    "Fukuoka"
   ),
   city = c(
     "Yokosuka",
-    "Hachinohe"
+    "Hachinohe",
+    "Misawa",
+    "Kasuga"
   ),
   operated = c(
+    2,
+    0,
     2,
     0
   ),
   personel = c(
     24000,
+    NA,
+    6450,
     NA
   ),
-  personel_prop = c(0.06, NA),
+  personel_prop = c(
+    0.06,
+    NA,
+    0.147,
+    NA
+  ),
   type = c(
     0,
+    2,
+    2,
     2
   ),
-  size = c( # Acres
-    568,
-    NA
+  size = c( # km^2
+    2.3,
+    NA,
+    23,
+    0.35
   ),
   prop_size = c(
     0.02,
-    NA
+    NA,
+    0.192,
+    0.025
   ),
   longitude = c(
     35.29249,
-    40.55782
+    40.55782,
+    141.23,
+    33.53165
   ),
   latitude = c(
     139.66956,
-    141.46555
+    141.46555,
+    40.40,
+    130.46745
   )
 )
 

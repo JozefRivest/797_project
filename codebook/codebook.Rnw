@@ -70,6 +70,10 @@ code chunk below.
 print(mil_bases)
 @
 
+\section{Country}
+
+The \verb|country| variable indicates in which \textbf{hosting}
+country the base is located.
 
 \section{Region}
 
@@ -90,25 +94,7 @@ corresponds to for each country present in the dataset.
 \section{Operated}
 
 \verb|operated| refers to the country who is operating the base.
-It can takes three values: Japan, United States, or Joint.
-
-\begin{table}[H]
-\centering
-\begin{tblr}[         %% tabularray outer open
-]                     %% tabularray outer close
-{                     %% tabularray inner open
-colspec={Q[]Q[]},
-row{1}={}{font=\bfseries,},
-cell{2-3}{2}={}{halign=c,},
-}                     %% tabularray inner close
-\toprule
-Type & Value \\ \midrule %% TinyTableHeader
-Naval Base & 0 \\
-Ground Base & 1 \\
-Air Base & 2 \\
-\bottomrule
-\end{tblr}
-\end{table} 
+It can takes three values: Japan (0), United States (1), or Joint (2).
 
 \section{Personnel}
 
@@ -134,12 +120,13 @@ for combinations.
 {                     %% tabularray inner open
 colspec={Q[]Q[]},
 row{1}={}{font=\bfseries,},
-cell{2-3}{2}={}{halign=c,},
+cell{2-4}{2}={}{halign=c,},
 }                     %% tabularray inner close
 \toprule
 Type & Value \\ \midrule %% TinyTableHeader
 Naval Base & 0 \\
 Ground Base & 1 \\
+Air Base & 2 \\
 \bottomrule
 \end{tblr}
 \end{table} 
@@ -154,7 +141,8 @@ officially recensed.
 The \verb|prop_size| variable corresponds to the ratio of the 
 total area of the base over the total area of the city where the 
 base is located. The estimation is obtained by dividing to size of 
-the base in hectars by the total size of the city in hectars. 
+the base in hectars by the total size of the city in kilometers
+squared. 
 
 \section{Longitude}
 
