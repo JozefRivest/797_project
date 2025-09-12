@@ -109,7 +109,8 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{author}
-      \field{abstract}{In a recently published article, Allen et al. (Outside the wire: U.S. military deployments and public opinion in host states’, American Political Science Review, 114(2), 326–341; 2020) argue that US military deployments nurture favorable attitudes toward the United States among foreign citizens. Their claim is based on social contact and economic compensation theories, applied to a large-scale cross-national survey project funded by the US government. However, their analysis disregards the geographical concentration of US military facilities within the host countries. To examine the relevance of geography and assess both positive and negative externalities, we focus on Japan – a notable case given its status as the country hosting the largest number of US military personnel in the world. We show that residents of Okinawa, a small prefecture hosting 70\% of US military facilities within Japan have considerably unfavorable attitudes toward the US military presence in their prefecture. They hold this negative sentiment specifically toward the bases in Okinawa regardless of their contact with Americans and economic benefits and their general support for the US military presence within Japan. Our findings support an alternative theory of not-in-my-backyard. They also shed light on the importance of local foreign public opinion for foreign policy analysis and call for a more balanced scholarly debate on the externalities of the global US military presence.}
+      \field{abstract}{In a recently published article, Allen et al. (Outside the wire: U.S. military deployments and public opinion in host states’, American Political Science Review, 114(2), 326–341; 2020) argue that US military deployments nurture favorable attitudes toward the United States among foreign citizens. Their claim is based on social contact and economic compensation theories, applied to a large-scale cross-national survey project funded by the US government. However, their analysis disregards the geographical concentration of US military facilities within the host countries. To examine the relevance of geography and assess both positive and negative externalities, we focus on Japan – a notable case given its status as the country hosting the largest number of US military personnel in the world. We show that residents of Okinawa, a small prefecture hosting 70% of US military facilities within Japan have considerably unfavorable attitudes toward the US military presence in their prefecture. They hold this negative sentiment specifically toward the bases in Okinawa regardless of their contact with Americans and economic benefits and their general support for the US military presence within Japan. Our findings support an alternative theory of not-in-my-backyard. They also shed light on the importance of local foreign public opinion for foreign policy analysis and call for a more balanced scholarly debate on the externalities of the global US military presence.}
+      \field{issn}{1470-482X}
       \field{journaltitle}{International Relations of the Asia-Pacific}
       \field{library}{Silverchair}
       \field{number}{2}
@@ -122,48 +123,11 @@
       \verb{doi}
       \verb 10.1093/irap/lcac002
       \endverb
-    \endentry
-    \entry{horiuchi_tago23}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=d7ae19f6931e71ba259220da103c0c97}{%
-           family={Horiuchi},
-           familyi={H\bibinitperiod},
-           given={Yusaku},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=48085bcac1be431115b237f544e53633}{%
-           family={Tago},
-           familyi={T\bibinitperiod},
-           given={Atsushi},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{4228acf559a6d3d5dd3bc090bdf1fa4c}
-      \strng{fullhash}{4228acf559a6d3d5dd3bc090bdf1fa4c}
-      \strng{fullhashraw}{4228acf559a6d3d5dd3bc090bdf1fa4c}
-      \strng{bibnamehash}{4228acf559a6d3d5dd3bc090bdf1fa4c}
-      \strng{authorbibnamehash}{4228acf559a6d3d5dd3bc090bdf1fa4c}
-      \strng{authornamehash}{4228acf559a6d3d5dd3bc090bdf1fa4c}
-      \strng{authorfullhash}{4228acf559a6d3d5dd3bc090bdf1fa4c}
-      \strng{authorfullhashraw}{4228acf559a6d3d5dd3bc090bdf1fa4c}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{author}
-      \field{abstract}{The war in Ukraine has manifested the critical importance of the American alliance network and the swift and effective deployment of necessary military assets. But do citizens of the U.S. allies support the deployment of such advanced, thus controversial, military assets in their countries? To examine this question, we administered two conjoint experiments in Japan, a critical U.S. ally in Asia. The results show the Japanese citizens’ strong Not-In-My-Backyard (NIMBY) sentiment: They value the U.S.-Japan alliance per se but do not want those advanced arms (speciﬁcally, Osprey and F-35 ﬁghter jets) to be deployed in their vicinity, particularly when the U.S. military operates them. Our study contributes to the literature on alliance politics and civil-military relations by emphasizing the importance of paying close attention to local public opposition as a potential source of instability in global military alliances.}
-      \field{journaltitle}{Journal of Conflict Resolution}
-      \field{library}{DOI.org (Crossref)}
-      \field{number}{9}
-      \field{shorttitle}{U.S. Military Should Not Be in My Backyard}
-      \field{title}{U.S. Military Should Not Be in My Backyard: Conjoint Experiments in Japan}
-      \field{volume}{68}
-      \field{year}{2023}
-      \field{pages}{1798\bibrangedash 1824}
-      \range{pages}{27}
-      \verb{doi}
-      \verb 10.1177/00220027231203607
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/irap/lcac002
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/irap/lcac002
       \endverb
     \endentry
     \entry{jakobsen_jakobsen19}{article}{}{}
@@ -213,98 +177,6 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1080/13523260.2018.1492066
-      \endverb
-    \endentry
-    \entry{kim17a}{article}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=9756dd074beec25e989b6acd99e79310}{%
-           family={Kim},
-           familyi={K\bibinitperiod},
-           given={Claudia\bibnamedelima J.},
-           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \strng{namehash}{9756dd074beec25e989b6acd99e79310}
-      \strng{fullhash}{9756dd074beec25e989b6acd99e79310}
-      \strng{fullhashraw}{9756dd074beec25e989b6acd99e79310}
-      \strng{bibnamehash}{9756dd074beec25e989b6acd99e79310}
-      \strng{authorbibnamehash}{9756dd074beec25e989b6acd99e79310}
-      \strng{authornamehash}{9756dd074beec25e989b6acd99e79310}
-      \strng{authorfullhash}{9756dd074beec25e989b6acd99e79310}
-      \strng{authorfullhashraw}{9756dd074beec25e989b6acd99e79310}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{author}
-      \field{issn}{0951-2748, 1470-1332}
-      \field{journaltitle}{The Pacific Review}
-      \field{library}{DOI.org (Crossref)}
-      \field{number}{3}
-      \field{shorttitle}{War over framing}
-      \field{title}{War over framing: base politics in South Korea}
-      \field{volume}{30}
-      \field{year}{2017}
-      \field{pages}{309\bibrangedash 327}
-      \range{pages}{19}
-      \verb{doi}
-      \verb 10.1080/09512748.2016.1239127
-      \endverb
-      \verb{urlraw}
-      \verb https://www.tandfonline.com/doi/full/10.1080/09512748.2016.1239127
-      \endverb
-      \verb{url}
-      \verb https://www.tandfonline.com/doi/full/10.1080/09512748.2016.1239127
-      \endverb
-    \endentry
-    \entry{vine19}{article}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=755b2caad9ac2bef35a25fa57e0d072f}{%
-           family={Vine},
-           familyi={V\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \strng{namehash}{755b2caad9ac2bef35a25fa57e0d072f}
-      \strng{fullhash}{755b2caad9ac2bef35a25fa57e0d072f}
-      \strng{fullhashraw}{755b2caad9ac2bef35a25fa57e0d072f}
-      \strng{bibnamehash}{755b2caad9ac2bef35a25fa57e0d072f}
-      \strng{authorbibnamehash}{755b2caad9ac2bef35a25fa57e0d072f}
-      \strng{authornamehash}{755b2caad9ac2bef35a25fa57e0d072f}
-      \strng{authorfullhash}{755b2caad9ac2bef35a25fa57e0d072f}
-      \strng{authorfullhashraw}{755b2caad9ac2bef35a25fa57e0d072f}
-      \field{sortinit}{V}
-      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{author}
-      \field{issn}{0011-3204, 1537-5382}
-      \field{journaltitle}{Current Anthropology}
-      \field{library}{DOI.org (Crossref)}
-      \field{number}{S19}
-      \field{shorttitle}{No Bases?}
-      \field{title}{No Bases? Assessing the Impact of Social Movements Challenging US Foreign Military Bases}
-      \field{volume}{60}
-      \field{year}{2019}
-      \field{pages}{S158\bibrangedash S172}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1086/701042
-      \endverb
-      \verb{urlraw}
-      \verb https://www.journals.uchicago.edu/doi/10.1086/701042
-      \endverb
-      \verb{url}
-      \verb https://www.journals.uchicago.edu/doi/10.1086/701042
       \endverb
     \endentry
   \enddatalist
