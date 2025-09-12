@@ -1,5 +1,6 @@
 \documentclass[12pt]{article}
-\title{Pacifism and Antimilitarism in Japan}
+\title{Pacifism and Antimilitarism in Japan: Introducing a novel
+dataset}
 \author{Jozef Rivest}
 \date{ }
 
@@ -17,8 +18,20 @@
   colorlinks=true,
   linkcolor=Maroon,
   urlcolor=Maroon,
-  citecolor=Maroon
+  citecolor=Maroon,
+  filecolor=Maroon
 }
+
+\usepackage{tabularray}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\UseTblrLibrary{booktabs}
+\UseTblrLibrary{siunitx}
+\newcommand{\tinytableTabularrayUnderline}[1]{\underline{#1}}
+\newcommand{\tinytableTabularrayStrikeout}[1]{\sout{#1}}
+\NewTableCommand{\tinytableDefineColor}[3]{\definecolor{#1}{#2}{#3}}
 
 \begin{document}
 \maketitle
@@ -29,41 +42,60 @@
 
 \section{Introduction}
 
-\begin{itemize}
-  \item Why is this dataset useful for political scientists?
-  \item Why is this dataset useful for my own research? 
-  \item Why seems feasible for this semester?
-\end{itemize}
+% \begin{itemize}
+%   \item Why is this dataset useful for political scientists?
+%   \item Why is this dataset useful for my own research? 
+%   \item What seems feasible for this semester?
+% \end{itemize}
 
-This dataset seeks to introduce information about U.S. 
-military bases in East asian countries. A growing body 
-of literature has been interested about the role and the 
-effect U.S. military bases and locations play on the host 
-countries, especially how it shapes citizen's attitudes. 
-For example, \cite{jakobsen_jakobsen19} seeked to understand 
-how U.S. military deployments in allied countries lead to 
-a growing sentiment of ``free--riding'' among the host 
-country over a certain threshold. Furthermore, \cite{allen_etal20} 
-found that increased contact with U.S. military troops 
-and the economic benefits generating from hosting these 
-bases has a positive effect on attitudes. 
+This dataset would also be highly valuable for my own research as
+I am interested in political attitudes toward the military and the
+state in a comparative fashion. More precisely, I am interested
+about how historical legacies -- such as wars, colonialism, and
+state and nation building strategies -- interact with contemporary
+challenges in shapping citizen's attitudes toward certain issue,
+using East and Southeast Asia as case studies. I define issue here
+broadly, as states are currently undergoing a lot of challenges.
 
-However, these findings are also challenged by empirical 
-evidences that go against these previous claims. 
-\textcite{hikotani_etal23} challenge the argument from Allen 
-and al. by highlighting that their argument greatly overlook 
-the disproportionate concentration of U.S. troops in some areas.
-Using the case of Okinawa in Japan, they find that the people 
-in this prefecture are more likely to have contact with U.S. 
-personnel and troops, and yet they hold more \textit{negative}
-views toward them. \textcite{horiuchi_tago23} also found clear 
-evidences of this ``Not-In-My-Backyard'' attitudes in Japan 
-against the U.S. military. Japanese do value the alliance, 
-but do not want the deployment of these arms in their 
-vicinity. These findings of negative views toward U.S. military 
-base go beyond the case of Japan, as movements global movments
-known as ``No Bases'' have surge in South Korea, Italy, and 
-Puerto Rico \parencite{vine19}.
+For this project, I want to limit myself to the attitudes toward
+the military. There have been a rise in international issues for
+the last decade. In East Asia, more precisely, the nuclearization
+of North Korea and the growing assertiveness of China in both the
+South China Sea and East China Sea have lead to a weakening in the
+regional balance of power. My goal is to understand how people react
+to these changes. I also want to capture the heterogeneity of these 
+attitudes and the factors that lead to different views and perspectives 
+given the regional security environment. For this, and as it will 
+be presented in the coming paragraphs, understanding the interaction 
+between the population with both the local and the U.S. military 
+will be theoretically and empirically important. 
+
+This dataset seeks to introduce information about U.S. military
+bases in East asian countries. A growing body of literature has
+been interested about the role and the effect U.S. military bases
+and locations play on the host countries, especially how it shapes
+citizen's attitudes.  For example, \cite{jakobsen_jakobsen19} seeked
+to understand how U.S. military deployments in allied countries
+lead to a growing sentiment of ``free--riding'' among the host
+country over a certain threshold. Furthermore, \cite{allen_etal20}
+found that increased contact with U.S. military troops and the
+economic benefits generating from hosting these bases has a positive
+effect on attitudes.
+
+However, these findings are also challenged by empirical evidences
+that go against these previous claims.  \textcite{hikotani_etal23}
+challenge the argument from Allen and al. by highlighting that their
+argument greatly overlook the disproportionate concentration of
+U.S. troops in some areas.  Using the case of Okinawa in Japan,
+they find that the people in this prefecture are more likely to
+have contact with U.S.  personnel and troops, and yet they hold
+more \textit{negative} views toward them. \textcite{horiuchi_tago23}
+also found clear evidences of this ``Not-In-My-Backyard'' attitudes
+in Japan against the U.S. military. Japanese do value the alliance,
+but do not want the deployment of these arms in their vicinity.
+These findings of negative views toward U.S. military base go beyond
+the case of Japan, as movements global movments known as ``No Bases''
+have surge in South Korea, Italy, and Puerto Rico \parencite{vine19}.
 
 Yet, no dataset has been created yet to help us understading popular
 views of the U.S. military, and how does it differs with the
@@ -71,11 +103,16 @@ interaction with local military. Furthermore, among the previous
 design some are also survey experiement (e.g., \textcite{horiuchi_tago23}),
 while other are historical account of the evolution of the protest
 movements (e.g., \textcite{vine19}) or how these movements failed
-to achieve their goal (e.g., \parencite{kim17a}). While this is
-not a negative thing per se, we still lack a comprehensive dataset
+to achieve their goal (e.g., \parencite{kim17a}). While this is not
+a negative thing per se, we still lack a comprehensive dataset
 widely available that would allow more finegrained and contemporary
 analyses of this phenomenom.
 
+For this semester, I will collect data about both the U.S. and Japan's 
+military facilities located in Japan. I want the dataset to provide 
+measures as fine grained as possible, so it becomes easier and more 
+robust to study empirically the interaction between the local 
+citizens and the different military forces. 
 
 \section{Literature Review}
 
@@ -86,8 +123,68 @@ The objective of this paper is to introduce a dataset that contains
 information about U.S. military bases abroad and local military
 bases. The goal for the semester will be to create a dataset
 containing informations about US military bases and JSDF bases.
+The main goal of the dataset is to introduce a multidimensionnal 
+overview of the different military facilities in Japan, for both 
+the U.S. and Japan. I say multidimensionnal because there's a great 
+heterogeneity across all facilities. 
 
-Each row of the dataset will be one base. As an illustration, the 
+This can be disagregated on two levels. The first one concerns the
+\textit{absolute} measurement of the bases themselves. For example,
+they vary in terms of size, the number of working personel, and the
+type of forces it hosts. Hence, several indicators can be used to
+disagregate the bases, and compare them on many individual scales.
+The second one concerns the \textit{relative} measurement of the
+bases. As the size of the base varies, so does the size of the vicinity 
+where they are located. Hence, they do not occup the space in the same 
+way. Furthermore, the prefecture and the city where they are located 
+also vary in size. accounting for these variation is important as 
+the previous studies do not necessarily agree on whether the contact 
+with the military personel increase or not positive attitudes. 
+
+Finally, previous studies focused exclusively on U.S. military, 
+and almost not on Japan's facilities. While \textcite{horiuchi_tago23}
+did include Japan operated facilities in their experimental design 
+it does not capture the real preferences of citizens living near 
+these bases. Hence, we lack this knowledge for now, as previous 
+studies failed to account for the description of this relationship 
+in the context of living close to Japan's military facilities. 
+
+Each row of the dataset will be one base. As an illustration, please 
+see the tentative codebook in the \href{appendix}{appendix}. Several 
+indicators will be employed to measure both the absolute and relative 
+size of each facility, while also categorizing them based on the type 
+of forces they host and who operate it. 
+
+To validate this novel dataset, and especially on how it can captures 
+heterogeneity in attitudes toward the military and defense issues, 
+we will use data from an original survey fielded in April 2025 in 
+Japan with Rakuten Insight. A national representative sample based on 
+age, gender, and location was collected (n=1,733). In this survey, 
+four questions were asked about Japan's security. The questions and 
+their respective scale can be find in the Table \ref{tbl:datago-questions}.
+
+\begin{table}[h]
+\begin{talltblr}[
+  caption={Questions about Japan's security},
+  label={tbl:datago-questions}
+  ]{
+    colspec={X[]X[]},
+    row{1}={}{cmd=\textbf}
+}
+\toprule
+Questions & Scale \\ \midrule
+The government should spend more in the military and defense. & Strongly disagree, Disagree, Agree, Strongly agree\\
+Japan should have the capacity to preemptively attack ennemy missile bases. & Strongly disagree, Disagree, Agree, Strongly agree\\
+Some have been discussing to amend the Article 9 of the constitution to newly stipulate the existence of the Self-Defense Forces, while keeping paragraphs 1 and 2 unchanged. Do you agree with these amendments to Article 9? Are you against it? & Strongly disagree, Disagree, Agree, Strongly agree\\
+Japan's military power should be further strengthened & Strongly disagree, Disagree, Agree, Strongly agree \\
+\bottomrule
+\end{talltblr}
+\end{table}
+
+Furthemore, as many of these questions were taken from the Todai-Asahi 
+survey it would be possible to merge some of these dataset together and 
+track the evolution trough time, which could help dissantangle many 
+interacting factors and alternative explanations. 
 
 \clearpage
 \printbibliography
@@ -95,6 +192,7 @@ Each row of the dataset will be one base. As an illustration, the
 
 \appendix
 \section{Appendix}
+\label{appendix}
 
 Insert preliminary codebook. 
 
